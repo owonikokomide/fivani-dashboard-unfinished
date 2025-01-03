@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--bg-color: #ffffff;
+	--bg-colors: #f5f9f3;
+	--text-color: #000000;
+	--secondary-color: rgb(71 85 105);
+	--tw-box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	--dark-color: #bcbce7;
+	--background: linear-gradient(135deg, #6a11cb, #2575fc);
+     
+}
+
+body.dark-mode {
+	--bg-color: #121212;
+	--bg-colors: #343434;
+	--text-color: #ffffff;
+	--text-colors: #b3d826;
+	--secondary-color: rgb(203 213 225);
+	--tw-box-shadow:  0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgb(255 255 255 / 0.25);
+	--dark-color: #1e1e2f;
+	--background: linear-gradient(135deg, black 20%, #00008B 70%);
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Montserrat", serif;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color 0.3s, color 0.3s;
+}
+.no-scroll {
+  overflow: hidden;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+}

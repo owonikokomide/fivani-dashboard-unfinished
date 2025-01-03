@@ -1,0 +1,158 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  color: black;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1000;
+  transition: width 0.3s ease;
+}
+
+
+
+.sidebarList {
+  list-style: none;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+/* Sidebar item */
+.sidebarItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  gap: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 70%;
+  position: relative;
+}
+
+.sidebarItem.active {
+  background-color: #000080; 
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.sidebarItem:hover {
+  background-color: #B6D0E2;
+  border-radius: 0.4rem;
+}
+
+.sidebarItem.clicked {
+  background-color: #000080; 
+  color: white;
+  pointer-events: none;
+  border-radius: 0.4rem;
+}
+
+.sidebarItem.clicked:hover {
+  background-color: #000080; 
+}
+
+
+.label {
+  font-size: 16px;
+}
+
+/* Dropdown menu styling */
+.dropdownMenu {
+  position: absolute; 
+  /* top: 100%; */
+  left: 0;
+  /* width: 100%;  */
+  /* background-color: white; */
+  border-radius: 4px;
+  z-index: 10;
+  padding: 0.5rem 0;
+  display: none;
+  list-style: none;
+  text-align: center;
+}
+
+/* Ensure dropdown visibility when active */
+.sidebarItem.active .dropdownMenu {
+  display: block; 
+}
+
+/* Dropdown item styling */
+.dropdownItem {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #B6D0E2; 
+}
+.sideitem{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.chevron{
+  margin-left: 4rem;
+}
+.closeicon{
+ background-color: #000080;
+ color: aliceblue;
+ padding: 1rem;
+ margin: 8px;
+ border-radius: 50%;
+ transition: transform 0.3s ease, color 0.3s ease;
+ cursor: pointer;
+}
+
+.closedbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+  padding: 1rem;
+}
+.sidebar.collapsed .sidebarList {
+  align-items: center;
+}
+
+
+.sidebar.collapsed .sidebarItem .label,
+.sidebar.collapsed .chevron {
+  display: none;
+}
+
+.sidebar.collapsed .logo {
+  display: block; 
+}
+
+
+.closeicon:hover {
+  transform: scale(1.2);
+}
+/* Sidebar icons */
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 50%;
+}
+
