@@ -7,7 +7,7 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 const Sidebar = ({ menuItems, onCollapseChange, isDropdownVisible }) => {
-  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null);
+  const [activeDropdownIndex, setActiveDropdownIndex] = useState(null); 
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleDropdown = (index) => {
