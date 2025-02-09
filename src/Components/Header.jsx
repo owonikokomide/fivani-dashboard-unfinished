@@ -4,7 +4,7 @@ import { FiSearch, FiBell } from "react-icons/fi";
 import { TbFilterSearch } from "react-icons/tb";
 import { RiContactsLine } from "react-icons/ri";
 import { BsChevronDown } from "react-icons/bs";
-import "../CSS/Header.css";
+import "../CSS/Header.css"; 
 
 const Header = ({ userName }) => {
   const [searchQuery, setSearchQuery] = useState("");
