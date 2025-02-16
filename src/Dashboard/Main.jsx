@@ -6,7 +6,7 @@ const Main = ({ isSidebarCollapsed }) => {
   return (
     <div
       className="main"
-      style={{
+      style={{ 
         marginLeft: isSidebarCollapsed ? "4rem" : "20vw", 
         transition: "margin-left 0.3s ease",
       }}
