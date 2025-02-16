@@ -11,7 +11,7 @@ const Sidebar = ({ menuItems, onCollapseChange, isDropdownVisible }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   const toggleDropdown = (index) => {
-    setActiveDropdownIndex((prevIndex) => (prevIndex === index ? null : index));
+    setActiveDropdownIndex((prevIndex) => (prevIndex === index ? null : index)); 
   };
 
   const handleCollapseClick = () => {
